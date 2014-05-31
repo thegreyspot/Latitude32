@@ -1,0 +1,59 @@
+//Our Base Variables
+$font_size: 14px !global;
+$font_color: #5e5c5c !global;
+$dark_font_color: darken($font_color, 50%) !global;
+$blue_font_color: #2AA4CF !global;
+$dark_blue: #0D6582 !global;
+$light_blue: #2AA4CF;
+$header_font: lao ui, Verdana, Arial, Helvetica, sans-serif !global;
+$site_font: lao ui, Verdana, Arial, Helvetica, sans-serif !global;
+
+//Google fonts
+@import url(http://fonts.googleapis.com/css?family=Julius+Sans+One);
+@font-face{font-family: 'Raleway Thin'; src: url('fonts/Raleway-Thin.otf')};
+@font-face{font-family: 'Karla'; src: url('fonts/Karla-Regular.ttf')};
+
+// Bring compass into our project
+//@import "compass/reset";
+@import "compass/utilities";
+@import "compass/css3";
+@import "susyone";
+
+$total-columns  : 1 !global;             // a 1-column grid
+$column-width   : 100em !global;            // each column is 4em wide
+$gutter-width   : 0em !global;            // 1em gutters between columns
+$grid-padding   : $gutter-width !global;  // grid-padding equal to gutters
+
+//Import this for mixins
+@import "mixins";
+
+//Import this for all platforms
+@import "styles";
+
+//Import this for the main site header
+@import "header";
+
+//Import this for the main site navigation bar
+@import "navigation";
+
+//Import this for the arrow button that brings you to the next card
+@import "time_line";
+
+//Import this for the cards styles
+@import "cards";
+
+//Import this for the cards images
+@import "cards_images";
+
+//Import this for the cards images
+@import "cards_custom";
+
+//Load this last cause this take priority over everything if its true
+@import "responsive";
+
+//IE specific styles
+@import "ie";
+
+
+
+

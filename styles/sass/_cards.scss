@@ -1,0 +1,90 @@
+#container{
+  @include box-sizing(border-box);
+  #cards{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    @include box-sizing(border-box);
+    .card{
+      @include box-sizing(border-box);
+      min-height: 100%;
+      padding-left:3%;
+      padding-right:3%;
+      //Flex Stuff
+      @include display-flex();
+      @include flex-flow(row wrap);
+      //@include justify-content(space-between);
+
+      .content{
+        flex:1;
+        padding-left: 3%;
+      }
+      .half{
+        &.image{
+          margin-top: 46px;  
+          height: 400px;
+          .image_holder{
+            width:100%;
+            height:100%;
+            @include box-sizing(border-box);
+            @include background-size(contain);
+            background-repeat: no-repeat;
+            background-position: center;
+          }
+        }
+        &.text{
+          @include box-sizing(border-box);
+          h1,h2,p{
+            opacity: 1;
+          }
+          h1,h2{
+            font-family: 'lao ui', Verdana, Arial, Helvetica, sans-serif;
+          }
+          p,span{
+            font-family: 'Karla', sans-serif;
+            margin-top: 2em;
+            font-size: 14px;
+          }
+          .lists{
+            $gutter-width   : 5em;            // 1em gutters between columns
+            $grid-padding   : 0em;  
+            @include container;
+            .list{
+              @include span-columns(1,2);
+              ul li{
+                margin-bottom: 3%;
+                .icon-check-empty,.icon-ok{
+                  position: absolute;
+                  white-space: nowrap;
+                  font-size: 1.5em;
+                }
+                .icon-ok{
+                  display: block;
+                  text-overflow: clip;
+                  width: 0px;
+                  overflow: hidden;
+                  @include transition-property(width);
+                  @include transition-delay(1s);
+                  @include transition-duration(0.5s);
+                  @include transition-timing-function(ease-in);
+                }
+                span{
+                  margin-left: 29px;
+                }
+              }
+              &:last-child{
+                @include omega;
+              }
+            }//.list
+          }//.lists
+          
+        }
+      }//half
+      .full{ 
+          height: 100%;
+          width: 95%;
+          @include order(2);
+      }
+    }//.card
+  }//#cards
+}//#container

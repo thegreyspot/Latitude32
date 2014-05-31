@@ -1,0 +1,18 @@
+<div class="list" id="code">
+	<h3>code</h3>
+	<ul>
+		<% i = 1;
+		 _.each(code, function(c) { %>
+			<li class="feature"><i class="icon-check-empty"></i><i class="icon-ok" style="-webkit-transition-delay: <%= i %>s;-moz-transition-delay: <%= i %>s;-o-transition-delay: <%= i %>s;transition-delay: <%= i %>s;"></i><span><%=c%></span></li>
+		<% i = i+0.5; }); %>
+	</ul>
+</div>
+<div class="list" id="design">
+	<h3>design</h3>
+	<ul>
+		<%
+		_.each(design, function(c) { %>
+			<li class="feature"><i class="icon-check-empty"></i><i class="icon-ok" style="-webkit-transition-delay: <%= i %>s;-moz-transition-delay: <%= i %>s;-o-transition-delay: <%= i %>s;transition-delay: <%= i %>s;"></i><span><%=c%></span></li>
+		<% i = i+0.5; }); %>
+	</ul>
+</div>

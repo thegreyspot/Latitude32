@@ -1,0 +1,87 @@
+#container{
+  #cards{
+    .card{
+      .time_line{
+        width: 14%;
+        @include display-flex();
+        max-width: 11em;
+        .line{
+          border-right: 2px dotted;//default
+          margin: 0 auto;
+        }
+      }//.time_line
+    }//.card
+  }//#cards
+}
+
+/* ==========================================================================
+   Timeline Circle
+   ========================================================================== */
+.circle{
+  position: fixed;
+  background: black;//default
+  width:14%;
+  max-width: 11em;
+  height:0;
+  max-height: 11em;
+  padding-bottom: 14%;
+  border-radius: 50%;
+  top: 50%;
+  left: 3%;
+  z-index: 9;
+  @include transition(background-color, 1s);
+  &:hover{
+    cursor: pointer;
+  }
+  .year,.arrow{
+    width: 100%;
+    text-align: center;
+    font-size: 0.95em;
+    position: absolute;
+  } 
+  .year{
+    top: 20%;
+    text-decoration: uppercase;
+    font-family: 'Julius Sans One', sans-serif;
+    display: none;
+  }
+  .arrow{
+    top: 46%;
+  }
+}//.circle
+
+
+/* ==========================================================================
+   Individual Circles for each card
+   ========================================================================== */
+html{
+  &.intro_start{
+    @include timelineCircleApplier("intro_start", inherit);
+  }
+  &.wnmu{
+    @include timelineCircleApplier("wnmu", #febe10);
+  }
+  &.socialtrak_product_page{
+    @include timelineCircleApplier("socialtrak_product_page", #C54146);
+  }
+  &.socialtrak{
+    @include timelineCircleApplier("socialtrak", #52D5E9);
+  }
+  &.musicbee{
+    @include timelineCircleApplier("musicbee", #F5C126);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,31 @@
+#container #cards {
+  #intro_start {
+    height: 93%;
+    min-height: 400px;
+    @include align-items(center);
+    .time_line {
+      @include display-flex();
+      @include align-items(flex-end);
+      height: 100%;
+      .line{
+         height: 50%;
+      }
+    }
+    .content{
+       .centered_text{
+          text-align: left;
+          h1,h2{
+            font-weight: normal;
+            font-family: 'Raleway Thin' !important;
+          }
+          h1{
+            margin-bottom: -3%;
+          }
+        }
+        .description{
+          font-size: 0.8em;
+          margin-top: 2%;
+        }
+    }//.content
+  }//#intro_start
+}//#container #cards

@@ -1,0 +1,178 @@
+@import "compass/css3/border-radius";
+/***********Site Structure ****************/
+//One column (smart phones)
+#container {
+  height: 100%;
+  width: 100%;
+}//container
+
+//Up to the min width
+@media only screen and (max-width: 300px){
+  #container {
+     #cards{
+        .circle{
+          width: 40px;
+          padding-bottom: 40px;
+          left: 9px;
+        }
+     }
+  }
+}
+
+//Stop acting smartphone friendly
+@media only screen and (min-width: 480px){
+  #container {
+     .site-navigation{
+       ul#items li.item{
+        font-size:1em; 
+        margin-top: 0.98em;
+       }
+     }//#site-navigation
+     #cards{
+        .circle{
+          .year,.arrow{
+            font-size: 1.55em;
+          }
+        }
+        .card{
+          &#intro_start{
+            .content{
+              .description{
+                font-size: 1em;
+                padding: 0 7%;
+              }
+            }
+          }//#intro_start
+        }//.card
+     }//#cards
+  }
+}//end @media 420px 
+
+//Two columns (tablets or bigger)782px
+@include at-breakpoint(782px 2) {
+  #container {
+     #cards{
+        .card{
+          padding-right: 0;
+          .content{
+            @include display-flex();
+            @include flex-direction(row);
+            .half{
+              @include flex(1);
+              &.image{
+                margin-top: 0;
+                height: auto;
+                @include flex(1);
+                @include order(2);
+                @include display-flex();
+                .image_holder{
+                  flex: 1;
+                  height: auto;
+                  @include background-size(cover);
+                  height: auto;
+                  background-position: left top;
+                }
+              }
+              &.text{
+                @include order(1);
+                padding-right: 5%;
+                @include display-flex();
+                @include align-items(stretch);
+                @include flex-flow(column wrap);
+                @include justify-content(center);
+                header{
+                }
+                .lists{
+                  margin: 0;
+                }
+              }
+            }//.half
+          }//.content
+          &#intro_start .content {
+            header{
+              @include flex(2);
+            }
+            .description{
+              font-size: 0.8em;
+            }
+          }//#intro_start
+          .time_line{
+            width: 11%;
+          }
+        }//card
+        .circle{
+          width: 11%;
+          padding-bottom: 11%;
+          .year,.arrow{
+            font-size: 2.05em;
+          }
+        }
+      }//cards
+  }//container
+}
+
+@media only screen and (min-width: 1115px){
+  #container {
+     #cards{
+        .card{
+          .time_line{
+            width: 120px;
+          }
+        }
+        .circle{
+          width: 120px;
+          padding-bottom: 120px;
+          .year,.arrow{
+            font-size: 2.65em;
+          }
+        }
+     }
+  }
+}//end @media 1400px 
+
+//Now we are just too wide... lets adjust somethings
+@media only screen and (min-width: 1250px){
+  #container {
+     #cards{
+        .card{
+          &#intro_start .content{
+            .description{
+              font-size: 1em;
+            }
+          }
+        }
+     }
+  }
+}//end @media 1400px 
+//Now we are just too wide... lets adjust somethings
+@media only screen and (min-width: 1400px){
+  #container {
+     #cards{
+        .card{
+          .half.text p,span {
+            font-size: 16px;
+          }
+        }
+     }
+  }
+}//end @media 1400px 
+//Now we are just too wide... lets adjust somethings
+@media only screen and (min-width: 1450px){
+  #container {
+     #cards{
+        .card{
+          
+        }
+     }
+  }
+}//end @media 1400px 
+//Now we are just too wide... lets adjust somethings
+@media only screen and (min-width: 1600px){
+  #container {
+     #cards{
+        .card{
+    
+        }
+     }
+  }
+}//end @media 1400px 
