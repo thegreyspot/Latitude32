@@ -3,7 +3,7 @@ define([
   'underscore',
   'backbone',
   'animatescroll',
-  'text!templates/Timeline/circleTemplate.html'
+  'text!templates/timeline/circleTemplate.html'
 ], function($, _, Backbone, animatescroll, circleTemplate){
   var CircleView = Backbone.View.extend({
   	currentCard: null,
