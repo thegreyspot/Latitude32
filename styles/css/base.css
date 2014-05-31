@@ -589,7 +589,7 @@ body {
 /* line 20, ../sass/_time_line.scss */
 .circle {
   position: absolute;
-  background: black;
+  background: #656565;
   width: 14%;
   max-width: 11em;
   height: 0;
@@ -614,16 +614,17 @@ body {
   text-align: center;
   font-size: 0.95em;
   position: absolute;
+  color: white;
 }
-/* line 42, ../sass/_time_line.scss */
+/* line 43, ../sass/_time_line.scss */
 .circle .year {
-  top: 20%;
+  top: 32%;
   text-decoration: uppercase;
   font-family: 'Julius Sans One', sans-serif;
 }
-/* line 47, ../sass/_time_line.scss */
+/* line 48, ../sass/_time_line.scss */
 .circle .arrow {
-  top: 46%;
+  top: 55%;
 }
 
 /* ==========================================================================
@@ -1086,7 +1087,7 @@ html.musicbee .circle .year, html.musicbee .circle .arrow {
   }
   /* line 106, ../sass/_responsive.scss */
   #container #cards .circle .year, #container #cards .circle .arrow {
-    font-size: 2.05em;
+    font-size: 1.65em;
   }
 }
 @media only screen and (min-width: 1115px) {
@@ -1101,7 +1102,7 @@ html.musicbee .circle .year, html.musicbee .circle .arrow {
   }
   /* line 125, ../sass/_responsive.scss */
   #container #cards .circle .year, #container #cards .circle .arrow {
-    font-size: 2.65em;
+    font-size: 2.15em;
   }
 }
 @media only screen and (min-width: 1250px) {
