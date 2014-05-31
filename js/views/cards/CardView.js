@@ -4,8 +4,9 @@ define([
   'backbone',
   'views/timeline/TimeLineView',
   'text!templates/cards/cardTemplate.html',
-  'text!templates/cards/cardListTemplate.html'
-], function($, _, Backbone, TimeLineView, cardTemplate, cardListTemplate){
+  'text!templates/cards/cardListTemplate.html',
+  'text!templates/timeline/circleTemplate.html'
+], function($, _, Backbone, TimeLineView, cardTemplate, cardListTemplate, circleTemplate){
   var CardView = Backbone.View.extend({
     initialize: function(){
 
@@ -52,7 +53,9 @@ define([
 			var compiledTemplate = _.template(cardListTemplate, this.model.attributes);
 			that.$el.find(".lists").append(compiledTemplate);
 		}
-		
+		console.log(this.model)
+		var compiledTemplate = _.template(circleTemplate, this.model.attributes);
+		this.$el.prepend(compiledTemplate);
 		
     }
   });
