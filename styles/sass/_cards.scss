@@ -7,9 +7,10 @@
     @include box-sizing(border-box);
     .card{
       @include box-sizing(border-box);
-      min-height: 100%;
+      min-height: 92%;
       padding-left:3%;
       padding-right:3%;
+      position: relative;
       //Flex Stuff
       @include display-flex();
       @include flex-flow(row wrap);

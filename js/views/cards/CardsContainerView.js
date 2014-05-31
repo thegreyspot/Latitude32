@@ -63,9 +63,7 @@ define([
 			cardView.render();
 		});
 
-		//Add Timeline Circle stuff
-		var cardView = new CircleView({el: that.$el, model: cardsCollection});
-		cardView.render();
+		
 
 		//Add font responsiveness to headers
 		fitTextURL = 'libs/fitText/fitText';
