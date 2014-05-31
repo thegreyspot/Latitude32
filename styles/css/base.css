@@ -1031,6 +1031,7 @@ html.musicbee .circle .year, html.musicbee .circle .arrow {
   #container #cards .card .content .half.image {
     margin-top: 0;
     height: auto;
+    padding: 2% 0;
     -webkit-flex: 1;
     flex: 1;
     -webkit-order: 2;
@@ -1038,7 +1039,7 @@ html.musicbee .circle .year, html.musicbee .circle .arrow {
     display: -webkit-flex;
     display: flex;
   }
-  /* line 68, ../sass/_responsive.scss */
+  /* line 69, ../sass/_responsive.scss */
   #container #cards .card .content .half.image .image_holder {
     flex: 1;
     height: auto;
@@ -1049,7 +1050,7 @@ html.musicbee .circle .year, html.musicbee .circle .arrow {
     height: auto;
     background-position: left top;
   }
-  /* line 76, ../sass/_responsive.scss */
+  /* line 77, ../sass/_responsive.scss */
   #container #cards .card .content .half.text {
     -webkit-order: 1;
     order: 1;
@@ -1063,56 +1064,56 @@ html.musicbee .circle .year, html.musicbee .circle .arrow {
     -webkit-justify-content: center;
     justify-content: center;
   }
-  /* line 85, ../sass/_responsive.scss */
+  /* line 86, ../sass/_responsive.scss */
   #container #cards .card .content .half.text .lists {
     margin: 0;
   }
-  /* line 92, ../sass/_responsive.scss */
+  /* line 93, ../sass/_responsive.scss */
   #container #cards .card#intro_start .content header {
     -webkit-flex: 2;
     flex: 2;
   }
-  /* line 95, ../sass/_responsive.scss */
+  /* line 96, ../sass/_responsive.scss */
   #container #cards .card#intro_start .content .description {
     font-size: 0.8em;
   }
-  /* line 99, ../sass/_responsive.scss */
+  /* line 100, ../sass/_responsive.scss */
   #container #cards .card .time_line {
     width: 11%;
   }
-  /* line 103, ../sass/_responsive.scss */
+  /* line 104, ../sass/_responsive.scss */
   #container #cards .circle {
     width: 11%;
     padding-bottom: 11%;
   }
-  /* line 106, ../sass/_responsive.scss */
+  /* line 107, ../sass/_responsive.scss */
   #container #cards .circle .year, #container #cards .circle .arrow {
     font-size: 1.65em;
   }
 }
 @media only screen and (min-width: 1115px) {
-  /* line 118, ../sass/_responsive.scss */
+  /* line 119, ../sass/_responsive.scss */
   #container #cards .card .time_line {
     width: 120px;
   }
-  /* line 122, ../sass/_responsive.scss */
+  /* line 123, ../sass/_responsive.scss */
   #container #cards .circle {
     width: 120px;
     padding-bottom: 120px;
   }
-  /* line 125, ../sass/_responsive.scss */
+  /* line 126, ../sass/_responsive.scss */
   #container #cards .circle .year, #container #cards .circle .arrow {
     font-size: 2.15em;
   }
 }
 @media only screen and (min-width: 1250px) {
-  /* line 139, ../sass/_responsive.scss */
+  /* line 140, ../sass/_responsive.scss */
   #container #cards .card#intro_start .content .description {
     font-size: 1em;
   }
 }
 @media only screen and (min-width: 1400px) {
-  /* line 152, ../sass/_responsive.scss */
+  /* line 153, ../sass/_responsive.scss */
   #container #cards .card .half.text p, #container #cards .card span {
     font-size: 16px;
   }
