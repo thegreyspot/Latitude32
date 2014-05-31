@@ -19,7 +19,7 @@
    ========================================================================== */
 .circle{
   position: absolute;
-  background: black;//default
+  background: #656565;//default
   width:14%;
   max-width: 11em;
   height:0;
@@ -38,14 +38,15 @@
     text-align: center;
     font-size: 0.95em;
     position: absolute;
+    color: white;
   } 
   .year{
-    top: 20%;
+    top: 32%;
     text-decoration: uppercase;
     font-family: 'Julius Sans One', sans-serif;
   }
   .arrow{
-    top: 46%;
+    top: 55%;
   }
 }//.circle
 
