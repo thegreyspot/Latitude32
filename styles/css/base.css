@@ -588,7 +588,7 @@ body {
    ========================================================================== */
 /* line 20, ../sass/_time_line.scss */
 .circle {
-  position: fixed;
+  position: absolute;
   background: black;
   width: 14%;
   max-width: 11em;
@@ -620,9 +620,8 @@ body {
   top: 20%;
   text-decoration: uppercase;
   font-family: 'Julius Sans One', sans-serif;
-  display: none;
 }
-/* line 48, ../sass/_time_line.scss */
+/* line 47, ../sass/_time_line.scss */
 .circle .arrow {
   top: 46%;
 }
@@ -723,25 +722,26 @@ html.musicbee .circle .year, html.musicbee .circle .arrow {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  min-height: 100%;
+  min-height: 92%;
   padding-left: 3%;
   padding-right: 3%;
+  position: relative;
   display: -webkit-flex;
   display: flex;
   -webkit-flex-flow: row wrap;
   flex-flow: row wrap;
 }
-/* line 18, ../sass/_cards.scss */
+/* line 19, ../sass/_cards.scss */
 #container #cards .card .content {
   flex: 1;
   padding-left: 3%;
 }
-/* line 23, ../sass/_cards.scss */
+/* line 24, ../sass/_cards.scss */
 #container #cards .card .half.image {
   margin-top: 46px;
   height: 400px;
 }
-/* line 26, ../sass/_cards.scss */
+/* line 27, ../sass/_cards.scss */
 #container #cards .card .half.image .image_holder {
   width: 100%;
   height: 100%;
@@ -755,27 +755,27 @@ html.musicbee .circle .year, html.musicbee .circle .arrow {
   background-repeat: no-repeat;
   background-position: center;
 }
-/* line 35, ../sass/_cards.scss */
+/* line 36, ../sass/_cards.scss */
 #container #cards .card .half.text {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* line 37, ../sass/_cards.scss */
+/* line 38, ../sass/_cards.scss */
 #container #cards .card .half.text h1, #container #cards .card .half.text h2, #container #cards .card .half.text p {
   opacity: 1;
 }
-/* line 40, ../sass/_cards.scss */
+/* line 41, ../sass/_cards.scss */
 #container #cards .card .half.text h1, #container #cards .card .half.text h2 {
   font-family: 'lao ui', Verdana, Arial, Helvetica, sans-serif;
 }
-/* line 43, ../sass/_cards.scss */
+/* line 44, ../sass/_cards.scss */
 #container #cards .card .half.text p, #container #cards .card .half.text span {
   font-family: 'Karla', sans-serif;
   margin-top: 2em;
   font-size: 14px;
 }
-/* line 48, ../sass/_cards.scss */
+/* line 49, ../sass/_cards.scss */
 #container #cards .card .half.text .lists {
   *zoom: 1;
   max-width: 100em;
@@ -791,24 +791,24 @@ html.musicbee .circle .year, html.musicbee .circle .arrow {
   display: table;
   clear: both;
 }
-/* line 52, ../sass/_cards.scss */
+/* line 53, ../sass/_cards.scss */
 #container #cards .card .half.text .lists .list {
   width: 48.78049%;
   float: left;
   margin-right: 2.43902%;
   display: inline;
 }
-/* line 54, ../sass/_cards.scss */
+/* line 55, ../sass/_cards.scss */
 #container #cards .card .half.text .lists .list ul li {
   margin-bottom: 3%;
 }
-/* line 56, ../sass/_cards.scss */
+/* line 57, ../sass/_cards.scss */
 #container #cards .card .half.text .lists .list ul li .icon-check-empty, #container #cards .card .half.text .lists .list ul li .icon-ok {
   position: absolute;
   white-space: nowrap;
   font-size: 1.5em;
 }
-/* line 61, ../sass/_cards.scss */
+/* line 62, ../sass/_cards.scss */
 #container #cards .card .half.text .lists .list ul li .icon-ok {
   display: block;
   text-overflow: clip;
@@ -831,17 +831,17 @@ html.musicbee .circle .year, html.musicbee .circle .arrow {
   -webkit-transition-timing-function: ease-in;
   transition-timing-function: ease-in;
 }
-/* line 71, ../sass/_cards.scss */
+/* line 72, ../sass/_cards.scss */
 #container #cards .card .half.text .lists .list ul li span {
   margin-left: 29px;
 }
-/* line 75, ../sass/_cards.scss */
+/* line 76, ../sass/_cards.scss */
 #container #cards .card .half.text .lists .list:last-child {
   float: right;
   margin-right: 0;
   *margin-left: -5em;
 }
-/* line 83, ../sass/_cards.scss */
+/* line 84, ../sass/_cards.scss */
 #container #cards .card .full {
   height: 100%;
   width: 95%;

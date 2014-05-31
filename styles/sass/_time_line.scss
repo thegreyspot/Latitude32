@@ -18,7 +18,7 @@
    Timeline Circle
    ========================================================================== */
 .circle{
-  position: fixed;
+  position: absolute;
   background: black;//default
   width:14%;
   max-width: 11em;
@@ -43,7 +43,6 @@
     top: 20%;
     text-decoration: uppercase;
     font-family: 'Julius Sans One', sans-serif;
-    display: none;
   }
   .arrow{
     top: 46%;
